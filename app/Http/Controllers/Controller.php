@@ -688,7 +688,7 @@ class Controller extends BaseController
     }
 
 public function checkReg(Request $req){
-        $exist = AdmissionModel::where('sts', $req->sts)->first();
+        $exist = AdmissionModel::where('reg', $req->sts)->first();
 
         if($exist){
             return response()->json(['status'=>200, 'info' => $exist->name.' '.$exist->fname.' '.$exist->lname]);

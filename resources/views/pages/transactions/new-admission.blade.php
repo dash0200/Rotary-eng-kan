@@ -17,12 +17,20 @@
         @csrf
         <div class="flex flex-col justify-around">
             <div class="flex justify-around">
-                <div class="m-2 w-full">
+                <!-- <div class="m-2 w-full">
                     <x-label value="STS" />
                     <x-input type="text" name="sts" id='reg' oninput='checkReg()' placeholder="SST" />
-			<span style='color:green' id='ok'></span>
+			            <span style='color:green' id='ok'></span>
                     	<span style='color:red' id='notok'></span>
+                </div> -->
+
+                <div class="m-2 w-full">
+                    <x-label value="Reg no" />
+                    <x-input type="text" name="reg" id='reg' oninput='checkReg()' placeholder="Reg No" />
+                    <span style='color:green' id='ok'></span>
+                    <span style='color:red' id='notok'></span>
                 </div>
+
                 <div class="m-2 w-full">
                     <x-label value="Student Name" />
                     <x-input type="text" placeholder="First Name"
@@ -361,7 +369,7 @@
                 $('#notok').text('')
                 $('#ok').text('')
                 if(res.status == 200)
-                    $('#notok').text('STS No Already Exist: ' + res.info)
+                    $('#notok').text('Reg No Already Exist: ' + res.info)
                 else
                     $('#ok').text('OK')
             }
