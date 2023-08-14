@@ -190,11 +190,11 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified']
         Route::post('datewise-get-receipt', 'datewiseGetReceipt')->name('datewiseGetReceipt');
     });
 
-    Route::get("/state", [Controller::class, "state"])->name("state");
-    Route::get("/dist", [Controller::class, "district"])->name("dist");
-    Route::get("/subDist", [Controller::class, "subDist"])->name("subDist");
-    Route::get("/acaYear", [Controller::class, "acaYear"])->name("acaYear");
-    Route::get("/class", [Controller::class, "classes"])->name("class");
+    // Route::get("/state", [Controller::class, "state"])->name("state");
+    // Route::get("/dist", [Controller::class, "district"])->name("dist");
+    // Route::get("/subDist", [Controller::class, "subDist"])->name("subDist");
+    // Route::get("/acaYear", [Controller::class, "acaYear"])->name("acaYear");
+    // Route::get("/class", [Controller::class, "classes"])->name("class");
 
     Route::get("/get-student-id", [Controller::class, "getStdId"])->name("getStdId");
     Route::get("/get-student", [Controller::class, "getStuddent"])->name("getstudent");
