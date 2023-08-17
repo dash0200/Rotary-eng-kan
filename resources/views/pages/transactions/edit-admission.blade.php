@@ -3,7 +3,7 @@
     <div class="w-full bg-gray-200" style="height: 1px;"></div>
     <form action="{{ route('trans.saveAdmission') }}" method="post">
         @csrf
-        <input type="text" value="{{ $std->id }}" name="id" >
+        <input type="text" value="{{ $std->id }}" name="id" hidden>
         <div class="flex flex-col justify-around">
             <div class="flex justify-around items-center">
                 <div class="m-2 w-full">
