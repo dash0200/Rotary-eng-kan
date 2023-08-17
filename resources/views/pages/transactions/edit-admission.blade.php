@@ -270,10 +270,10 @@
         taluk(data.id)
     })
 
-    $(document).ready(function() {
-        dist(11)
-        taluk(1)
-    });
+    // $(document).ready(function() {
+    //     dist(11)
+    //     taluk(1)
+    // });
 
 
     function dist(id) {
@@ -344,8 +344,7 @@
     $('.numOnly').keypress(function(e) {
 
         var charCode = (e.which) ? e.which : event.keyCode
-        if ((event.which != 46 || $(this).val().indexOf('.') != -1) && (event.which < 48 || event.which >
-                57))
+        if ((event.which != 46 || $(this).val().indexOf('.') != -1) && (event.which < 48 || event.which > 57))
             return false;
     });
 
