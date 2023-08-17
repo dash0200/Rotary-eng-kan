@@ -14,6 +14,7 @@ class AdmissionModel extends Model
     protected $table = 'admission';
     protected $fillable = [
         'id',
+        'reg',
         "date_of_adm",
         "year",
         "caste",

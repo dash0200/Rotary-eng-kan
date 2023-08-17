@@ -203,9 +203,6 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified']
     Route::get('check/reg', [Controller::class, 'checkReg'])->name('checkReg');
 });
 
-
-
-
 // Route::controller(DataDump::class)->group(function(){
 //     Route::get("cat", "categories")->name("addCats");
 //     Route::get("cast", "addRespectiveCasteToCategory")->name("addCaste");

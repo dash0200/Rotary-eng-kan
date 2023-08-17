@@ -161,7 +161,8 @@
     
                 <div class="m-2 w-full ">
                     <x-label value="Sub Caste" />
-                    <select name="subc" id="subc" class="w-full"></select>
+                    <select name="subc" id="subc" class="w-full">
+                    </select>
                 </div>
     
                 <div class="m-2 w-full">
@@ -190,7 +191,9 @@
             <div class="flex justify-around">
                 <div class="m-2 w-full">
                     <x-label value="District" />
-                    <select name="district" id="district" class="w-full"> </select>
+                    <select name="district" id="district" class="w-full">
+                        <option value="">--</option>
+                    </select>
                 </div>
     
                 <div class="m-2 w-full">
@@ -218,7 +221,9 @@
             <div class="flex justify-around">
                 <div class="m-2 w-full">
                     <x-label value="Taluk" />
-                    <select name="taluk" id="taluk" class="w-full"> </select>
+                    <select name="taluk" id="taluk" class="w-full">
+                        <option value="">--</option>
+                    </select>
                 </div>
     
                 <div class="m-2 w-full">
@@ -294,9 +299,12 @@
             success: function(data) {
                 // dists = [{"id":1, "text":"sdfdsf"}];
                 $("#district").html("")
+                $("#district").append(`<option value="">--</option>`)
                 for (let i = 0; i < data.length; i++) {
                     $("#district").append(
-                        `<option value="${data[i].id}"> ${data[i].text} </option>`
+                        `
+                        <option value="${data[i].id}"> ${data[i].text} </option>
+                        `
                     )
                 }
             },
@@ -312,9 +320,11 @@
             },
             success: function(data) {
                 $("#taluk").html("")
+                $("#taluk").append(`<option value="">--</option>`)
                 for (let i = 0; i < data.length; i++) {
                     $("#taluk").append(
-                        `<option value="${data[i].id}"> ${data[i].text} </option>`
+                        `
+                        <option value="${data[i].id}"> ${data[i].text} </option>`
                     )
                 }
             },

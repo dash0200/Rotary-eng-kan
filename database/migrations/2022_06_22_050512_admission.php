@@ -42,7 +42,7 @@ return new class extends Migration
             $table->date("dob");
             $table->string("birth_place");
             
-            $table->unsignedBigInteger('sub_district');
+            $table->unsignedBigInteger('sub_district')->default(null);
             $table->foreign('sub_district')->references('id')->on('sub_district');
 
             $table->string("religion")->nullable()->default(null);

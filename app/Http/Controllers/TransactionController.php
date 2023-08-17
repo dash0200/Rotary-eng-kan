@@ -99,6 +99,7 @@ class TransactionController extends Controller
         // ]);
 
         $data = [
+            "reg" => $req->reg,
             "date_of_adm" => $req->admDate,
             "year" => $req->ac_year,
             "caste" => $req->caste,
