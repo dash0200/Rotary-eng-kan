@@ -119,7 +119,7 @@ class TransactionController extends Controller
             "birth_place" => strtolower($req->birthPlace),
             "sub_district" => $req->taluk,
             "religion" => strtolower($req->religion),
-            "nationality" => $req->nationaluty,
+            "nationality" => $req->nationality,
             "gender" => $req->gender,
             "handicap" => $req->handicap,
             "prev_school" => strtolower($req->prevSchool),

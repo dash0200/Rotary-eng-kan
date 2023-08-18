@@ -39,7 +39,7 @@
                 </div>
                 <div class="m-2 w-full">
                     <x-label value="City" />
-                    <select name="city" id="city" required class="w-full">
+                    <select name="city" id="city" class="w-full">
                         <option value="">Select City</option>
                         @foreach ($districts as $district)
                             <option value="{{ $district->id }}">{{ $district->name }}</option>
@@ -198,7 +198,7 @@
     
                 <div class="m-2 w-full">
                     <x-label value="cat" />
-                    <select name="cat" id="cat" class="w-full">
+                    <select name="cat" id="cat" required class="w-full">
                         <option value="">Select Category</option>
                         @foreach ($categories as $cat)
                             <option value="{{$cat->id}}">{{ $cat->name }}</option>
@@ -232,8 +232,8 @@
                 </div>  
     
                 <div class="m-2 w-full">
-                    <x-label value="nationaluty" />
-                    <select name="nationaluty" id="nationaluty" class="w-full">
+                    <x-label value="nationality" />
+                    <select name="nationality" id="nationality" class="w-full">
                         <option value="INDIAN">Indian</option>
                     </select>
                 </div>
