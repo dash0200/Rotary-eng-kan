@@ -43,5 +43,8 @@
                 </x-jet-button>
             </div>
         </form>
+        <a href="https://rotaryschool.info/english/public" target='_blank'>
+            <x-button-primary>English Software</x-button-primary>
+        </a>
     </x-jet-authentication-card>
 </x-guest-layout>
