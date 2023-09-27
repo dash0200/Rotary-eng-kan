@@ -339,7 +339,7 @@
                 cast: id
             },
             success: function(res) {
-               
+                $('#cat').val(res.cats[0].cat).trigger('change')
                 let subs = res.subcasts;
                 $("#subc").html("")
                 for (let i = 0; i < subs.length; i++) {
